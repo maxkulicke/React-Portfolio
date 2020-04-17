@@ -1,10 +1,20 @@
 import React from "react";
-import Container from "../Container";
-import ContactForm from "../ContactForm";
+import { Col, Row, Container } from "../components/Grid";
+import ContactForm from "../components/ContactForm";
 
 function Contact() {
   return (
-      <ContactForm />
+    <Container>
+      <Row>
+        <Col size="md-1">
+        </Col>
+        <Col size="md-10">
+          <ContactForm />
+        </Col>
+        <Col size="md-1">
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

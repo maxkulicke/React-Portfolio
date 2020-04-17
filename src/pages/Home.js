@@ -1,13 +1,13 @@
 import React from "react";
-import Container from "../Container";
-import Header from "../Header";
+import { Col, Row, Container } from "../components/Grid";
+import { ImageCard, BasicCard } from "../components/Card";
+import { H1 } from "../components/Header";
 
 function Home() {
   return (
-    <div>
-      <Header text="Max Kulicke" />
-      <Container label="Home" />
-    </div>
+    <Container>
+      <H1 text="Max Kulicke" />
+    </Container>
   );
 }
 
