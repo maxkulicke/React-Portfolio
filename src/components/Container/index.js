@@ -2,11 +2,11 @@ import React from "react";
 import Card from "../Card"
 
 
-const Container = (props) => {
+const Container = ({ children }, props) => {
 
   return (
-    <div className="container">
-      {props.body}
+    <div className={ "Container " + props.className}>
+      {children}
     </div>
   );
 }

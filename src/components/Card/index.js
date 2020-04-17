@@ -9,3 +9,4 @@ export function Card({ children }) {
   );
 }
 
+export default Card;

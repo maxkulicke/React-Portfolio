@@ -1,10 +1,11 @@
 import React from "react";
 
-export function IFrame(props) {
+function IFrame(props) {
   return (
     <div>
-      <iframe src={props.src} width="300" height="300"
-        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe {...props}></iframe>
+
+      {/* <iframe {props.src} {props.width} {props.height} {prop.sframeborder} {props.allow} {props.allowfullscreen}></iframe> */}
     </div>
   );
 }
