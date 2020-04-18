@@ -7,15 +7,17 @@ import "./style.css"
 
 function Home() {
   return (
-    <Container fluid>
+    <div id="home">
       <Row>
         <Col size="md-1"></Col>
         <Col size="md-10">
-          <h2>Max Kulicke</h2>
+          <Container fluid>
+            <h2>Max Kulicke</h2>
+          </Container>
         </Col>
         <Col size="md-1"></Col>
       </Row>
-    </Container>
+    </div>
   );
 }
 

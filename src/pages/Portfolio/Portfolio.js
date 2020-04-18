@@ -9,14 +9,14 @@ import "./style.css"
 
 function Portfolio() {
   return (
-    <div className="portfolio">
-      <Container fluid
-        className="portfolio"
-      >
-        <Row>
-          <Col size="md-1">
-          </Col>
-          <Col size="md-10">
+    <div id="portfolio">
+      <Row>
+        <Col size="md-1">
+        </Col>
+        <Col size="md-10">
+          <Container fluid
+            className="portfolio"
+          >
             <h2>Projects</h2>
             <Row>
               <Col size="md-5">
@@ -68,11 +68,11 @@ function Portfolio() {
                 </Card>
               </Col>
             </Row>
-          </Col>
-          <Col size="md-1">
-          </Col>
-        </Row>
-      </Container>
+          </Container>
+        </Col>
+        <Col size="md-1">
+        </Col>
+      </Row>
     </div>
   );
 }

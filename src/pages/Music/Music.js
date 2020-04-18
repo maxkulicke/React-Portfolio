@@ -10,11 +10,11 @@ import "./style.css"
 function Music() {
   return (
     <div id="music">
-      <Container fluid>
-        <Row>
-          <Col size="md-1">
-          </Col>
-          <Col size="md-10">
+      <Row>
+        <Col size="md-1">
+        </Col>
+        <Col size="md-10">
+          <Container fluid>
             <h2>Music</h2>
             <h5>A sampling of my live and recorded work</h5>
             <IFrame
@@ -33,11 +33,11 @@ function Music() {
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen="true"
             />
-          </Col>
-          <Col size="md-1">
-          </Col>
-        </Row>
-      </Container>
+          </Container>
+        </Col>
+        <Col size="md-1">
+        </Col>
+      </Row>
     </div>
   );
 }

@@ -2,8 +2,9 @@ import React from "react";
 
 export function Button(props) {
   return (
-    <a href={props.href}
-      class={props.class} target={props.target}>{props.text}</a>
+    <button {...props} style={{ marginBottom: 10 }} className="btn btn-light">
+      {props.children}
+    </button>
   );
 }
 

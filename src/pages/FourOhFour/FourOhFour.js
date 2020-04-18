@@ -7,16 +7,17 @@ import "./style.css"
 
 function FourOhFour() {
   return (
-    <Row>
-      <Col size="md-1"></Col>
-      <Col size="md-10">
-        <Container fluid>
-          <h2>404: PAGE NOT FOUND AMIGO</h2>
-
-        </Container>
-      </Col>
-      <Col size="md-1"></Col>
-    </Row >
+    <div id="fourOhFour">
+      <Row>
+        <Col size="md-1"></Col>
+        <Col size="md-10">
+          <Container fluid>
+            <h2>404: PAGE NOT FOUND AMIGO</h2>
+          </Container>
+        </Col>
+        <Col size="md-1"></Col>
+      </Row >
+    </div>
   );
 }
 
