@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from "../Card";
 import Container from "../Container/index";
 import Button from "../Button/index"
+import axios from "axios"
 
 
 function ContactForm() {
@@ -12,34 +13,26 @@ function ContactForm() {
   function handleFormSubmit(event) {
     event.preventDefault();
     console.log(event);
+    console.log(formObject);
 
-    fetch('http://localhost:3002/send',{
-        method: "POST",
-        body: JSON.stringify(formObject),
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-      }).then(
-    	(response) => (response.json())
-       ).then((response)=>{
-      if (response.status === 'success'){
-        alert("Message Sent."); 
-        this.resetForm()
-      }else if(response.status === 'fail'){
+    axios({
+      method: "POST",
+      url: "http://localhost:3002/send",
+      data: formObject
+    }).then((response) => {
+      if (response.data.status === 'success') {
+        alert("Message Sent.");
+      } else if (response.data.status === 'fail') {
         alert("Message failed to send.")
       }
     })
-    // if (formObject.title && formObject.author) {
-    //   API.saveBook({
-    //     title: formObject.title,
-    //     author: formObject.author,
-    //     synopsis: formObject.synopsis
-    //   })
-    //     .then(res => console.log("woof"))
-    //     .catch(err => console.log(err));
-    // }
-  };
+  }
+
+  function resetForm() {
+    console.log("reset")
+    setFormObject({ ...formObject, name: "", email: "", message: "" })
+
+  }
 
   function handleInputChange(event) {
     const { name, value } = event.target;
@@ -58,7 +51,7 @@ function ContactForm() {
             id="nameInput"
             placeholder="your name (required)"
             onChange={handleInputChange}
-            name="Name"
+            name="name"
           ></input>
         </div>
         <div className="form-group">
