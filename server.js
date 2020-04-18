@@ -1,24 +1,57 @@
-const express = require("express");
+const express = require('express');
+const router = express.Router();
+const nodemailer = require('nodemailer');
+const cors = require('cors');
+const creds = require('./config');
 
-// const mongoose = require("mongoose");
-const routes = require("./routes");
-const app = express();
-const PORT = process.env.PORT || 3001;
-
-// Define middleware here
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-// Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+const transport = {
+  host: 'http://smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider
+  port: 587,
+  secure: true,
+  auth: {
+    user: creds.USER,
+    pass: creds.PASS
+  }
 }
-// Add routes, both API and view
-// app.use(routes);
 
-// Connect to the Mongo DB
-// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist");
+const transporter = nodemailer.createTransport(transport)
 
-// Start the API server
-app.listen(PORT, function() {
-  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+transporter.verify((error, success) => {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Server is ready to take messages');
+  }
 });
+
+router.post('/send', (req, res, next) => {
+  let name = req.body.name
+  let email = req.body.email
+  let message = req.body.message
+  let content = `name: ${name} \n email: ${email} \n message: ${message} `
+
+  let mail = {
+    from: name,
+    to: 'mkulicke@gmail.com',  // Change to email address that you want to receive messages on
+    subject: 'New Message from Contact Form',
+    text: content
+  }
+
+  transporter.sendMail(mail, (err, data) => {
+    if (err) {
+      res.json({
+        status: 'fail'
+      })
+    } else {
+      res.json({
+        status: 'success'
+      })
+    }
+  })
+})
+
+const app = express()
+app.use(cors())
+app.use(express.json())
+app.use('/', router)
+app.listen(3002)
