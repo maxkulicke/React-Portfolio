@@ -13,11 +13,13 @@ function About() {
         <Col size="md-1"></Col>
         <Col size="md-10">
           <Container fluid>
-            <Card className="card-img-top">
-              <img className="card-img"
-                src={ Max } className="card-img" id="" alt="max"/>
-              <div class="card-body">
-                <h2>About Me</h2>
+            <h2>About Me</h2>
+            <Row>
+              <Col size="md-6">
+                <img src={Max} id="maxOnBox" alt="max" />
+              </Col>
+              <Col size="md-6">
+
                 <p>
                   Live and Studio guitarist
               <br />
@@ -35,8 +37,9 @@ function About() {
                 <p>
                   Music Teacher
                 </p>
-              </div>
-            </Card>
+
+              </Col>
+            </Row>
           </Container>
         </Col>
         <Col size="md-1"></Col>

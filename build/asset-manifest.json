@@ -1,23 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.3fa4a494.chunk.css",
-    "main.js": "/static/js/main.fe8ddbd8.chunk.js",
-    "main.js.map": "/static/js/main.fe8ddbd8.chunk.js.map",
+    "main.css": "/static/css/main.88eb803b.chunk.css",
+    "main.js": "/static/js/main.40abaf85.chunk.js",
+    "main.js.map": "/static/js/main.40abaf85.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6be4d7d3.js",
     "runtime-main.js.map": "/static/js/runtime-main.6be4d7d3.js.map",
-    "static/js/2.5160012e.chunk.js": "/static/js/2.5160012e.chunk.js",
-    "static/js/2.5160012e.chunk.js.map": "/static/js/2.5160012e.chunk.js.map",
+    "static/js/2.188c759f.chunk.js": "/static/js/2.188c759f.chunk.js",
+    "static/js/2.188c759f.chunk.js.map": "/static/js/2.188c759f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.37ad7a18373ddc305d41d9a58bb2f3c3.js": "/precache-manifest.37ad7a18373ddc305d41d9a58bb2f3c3.js",
+    "precache-manifest.559ccb0e55cc7bbfc4b66da74ba021f2.js": "/precache-manifest.559ccb0e55cc7bbfc4b66da74ba021f2.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.3fa4a494.chunk.css.map": "/static/css/main.3fa4a494.chunk.css.map",
-    "static/js/2.5160012e.chunk.js.LICENSE.txt": "/static/js/2.5160012e.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/babyMax.c4633b23.jpg"
+    "static/css/main.88eb803b.chunk.css.map": "/static/css/main.88eb803b.chunk.css.map",
+    "static/js/2.188c759f.chunk.js.LICENSE.txt": "/static/js/2.188c759f.chunk.js.LICENSE.txt",
+    "static/media/babyMax.jpg": "/static/media/babyMax.c4633b23.jpg",
+    "static/media/bthere.jpg": "/static/media/bthere.4732375a.jpg",
+    "static/media/circleMax.png": "/static/media/circleMax.48044f2a.png",
+    "static/media/climateApp.jpg": "/static/media/climateApp.a68b8a85.jpg",
+    "static/media/cms.jpg": "/static/media/cms.9048c472.jpg",
+    "static/media/dayplanner.jpg": "/static/media/dayplanner.564e1702.jpg",
+    "static/media/max_on_box.jpg": "/static/media/max_on_box.70f618bd.jpg",
+    "static/media/passwordgenerator.jpg": "/static/media/passwordgenerator.ba20f2de.jpg",
+    "static/media/portfolio.jpg": "/static/media/portfolio.45aa8263.jpg",
+    "static/media/resume.pdf": "/static/media/resume.acf2a8eb.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.6be4d7d3.js",
-    "static/js/2.5160012e.chunk.js",
-    "static/css/main.3fa4a494.chunk.css",
-    "static/js/main.fe8ddbd8.chunk.js"
+    "static/js/2.188c759f.chunk.js",
+    "static/css/main.88eb803b.chunk.css",
+    "static/js/main.40abaf85.chunk.js"
   ]
 }

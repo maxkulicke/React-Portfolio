@@ -1,6 +1,3 @@
-/* #fourOhFour {
-  background-image: url("../../assets/images/babyMax.jpg");
-  background-size: cover;   
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-} */
+#fourOhFour {
+  margin: 5%;
+}

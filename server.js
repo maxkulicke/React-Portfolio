@@ -3,6 +3,19 @@ const router = express.Router();
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const creds = require('./config');
+const app = express();
+const port = process.env.PORT || 3002;
+
+app.listen(port, () => console.log(`Listening on port ${port}`));
+
+app.get('/express_backend', (req, res) => {
+  res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
+});
+
+// app.use(cors())
+// app.use(express.json())
+// app.use('/', router)
+// app.listen(3002)
 
 const transport = {
   host: 'http://smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider
@@ -49,9 +62,3 @@ router.post('/send', (req, res, next) => {
     }
   })
 })
-
-const app = express()
-app.use(cors())
-app.use(express.json())
-app.use('/', router)
-app.listen(3002)

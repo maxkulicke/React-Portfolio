@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Header from "../src/components/Header/index"
+import Footer from "../src/components/Footer/index"
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About"
 import Contact from "./pages/Contact/Contact";
@@ -13,7 +15,7 @@ function App() {
   return (
     <Router>
       <div id="app">
-        <Navbar />
+        <Header />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
@@ -22,6 +24,7 @@ function App() {
           <Route exact path="/contact" component={Contact} />
           <Route path="*" component={FourOhFour} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

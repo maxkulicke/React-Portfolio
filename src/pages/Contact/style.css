@@ -1,6 +1,10 @@
-/* #contact{
-  background-image: url("../../assets/images/babyMax.jpg");
-  background-size: cover;   
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-} */
+#contact{
+  margin: 5%;
+
+}
+
+.btn {
+  background-color: #F5F7FA;
+  color: #1F2933;
+  font-size: 16pt;
+}

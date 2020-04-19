@@ -1,6 +1,11 @@
-/* #About {
-  background-image: url("../../assets/images/babyMax.jpg");
-  background-size: cover;   
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-} */
+#about {
+  margin: 5%;
+}
+
+#maxOnBox {
+  max-width: 90%;
+  max-height: 90%;
+  border-color: #F5F7FA  ;
+  border-style: solid;
+  border-width: medium;
+}
