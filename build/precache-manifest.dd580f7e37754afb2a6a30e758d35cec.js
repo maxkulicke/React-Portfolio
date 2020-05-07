@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "80ff7e5ca157d6219e8288264a536cbc",
+    "revision": "81b8e6bb4c398fd65d955d67c797a78b",
     "url": "/index.html"
   },
   {
-    "revision": "abeff70a9d4854211e77",
+    "revision": "cd8ba1c4a900a405ef93",
     "url": "/static/css/main.88eb803b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.188c759f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "abeff70a9d4854211e77",
-    "url": "/static/js/main.40abaf85.chunk.js"
+    "revision": "cd8ba1c4a900a405ef93",
+    "url": "/static/js/main.072886c2.chunk.js"
   },
   {
     "revision": "a0ac1140309c735bc60b",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "564e1702506cf78a4ee2a3653a5d12d9",
     "url": "/static/media/dayplanner.564e1702.jpg"
+  },
+  {
+    "revision": "77ce4c94c3b767a0c4de2219f06e988d",
+    "url": "/static/media/majj.77ce4c94.jpg"
   },
   {
     "revision": "70f618bdd8918ecd64f1ad76981592e5",

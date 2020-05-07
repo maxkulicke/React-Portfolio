@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.88eb803b.chunk.css",
-    "main.js": "/static/js/main.40abaf85.chunk.js",
-    "main.js.map": "/static/js/main.40abaf85.chunk.js.map",
+    "main.js": "/static/js/main.072886c2.chunk.js",
+    "main.js.map": "/static/js/main.072886c2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6be4d7d3.js",
     "runtime-main.js.map": "/static/js/runtime-main.6be4d7d3.js.map",
     "static/js/2.188c759f.chunk.js": "/static/js/2.188c759f.chunk.js",
     "static/js/2.188c759f.chunk.js.map": "/static/js/2.188c759f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.559ccb0e55cc7bbfc4b66da74ba021f2.js": "/precache-manifest.559ccb0e55cc7bbfc4b66da74ba021f2.js",
+    "precache-manifest.dd580f7e37754afb2a6a30e758d35cec.js": "/precache-manifest.dd580f7e37754afb2a6a30e758d35cec.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.88eb803b.chunk.css.map": "/static/css/main.88eb803b.chunk.css.map",
     "static/js/2.188c759f.chunk.js.LICENSE.txt": "/static/js/2.188c759f.chunk.js.LICENSE.txt",
@@ -18,6 +18,7 @@
     "static/media/climateApp.jpg": "/static/media/climateApp.a68b8a85.jpg",
     "static/media/cms.jpg": "/static/media/cms.9048c472.jpg",
     "static/media/dayplanner.jpg": "/static/media/dayplanner.564e1702.jpg",
+    "static/media/majj.jpg": "/static/media/majj.77ce4c94.jpg",
     "static/media/max_on_box.jpg": "/static/media/max_on_box.70f618bd.jpg",
     "static/media/passwordgenerator.jpg": "/static/media/passwordgenerator.ba20f2de.jpg",
     "static/media/portfolio.jpg": "/static/media/portfolio.45aa8263.jpg",
@@ -27,6 +28,6 @@
     "static/js/runtime-main.6be4d7d3.js",
     "static/js/2.188c759f.chunk.js",
     "static/css/main.88eb803b.chunk.css",
-    "static/js/main.40abaf85.chunk.js"
+    "static/js/main.072886c2.chunk.js"
   ]
 }
